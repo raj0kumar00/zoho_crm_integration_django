@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>wellcome to codingbeast (admin)</title>
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+   
+		html, body{height:100%; margin:0;padding:0}
+		
+		.container-fluid{
+		height:100%;
+		display:table;
+		width: 100%;
+		padding: 0;
+		}
+		
+		.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+		
+		
+		
+		.centering {
+		float:none;
+		margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="centering text-center">
+			{% if status %}
+			<a  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Connected</a>
+			{% else %}
+			<a href="{{tokenlogin}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Click here to Connect Zoho</a>
+			{% endif %}
+        </div>
+    </div>
+</div>
+</body>

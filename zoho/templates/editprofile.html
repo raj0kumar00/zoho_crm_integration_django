@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>Wellcome to CodingBeast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style>
+  html, body{height:100%; margin:0;padding:0}
+  
+  .container-fluid{
+    height:100%;
+    display:table;
+    width: 100%;
+    padding: 0;
+  }
+    
+  .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+    
+    
+  
+  .centering {
+    float:none;
+    margin:0 auto;
+  }
+</style>
+<body>
+<div class="container-fluid">
+  <div class="row-fluid ">
+  <form class="form-horizontal" method = "Post">
+    {% csrf_token %}
+    <fieldset>
+    
+    <!-- Form Name -->
+
+    
+ 
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Email">Email</label>  
+      <div class="col-md-4">
+      <input id="Email" name="Email" type="text" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="mob">Mobile </label>  
+      <div class="col-md-4">
+      <input id="mob" name="mob" type="text" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for=""></label>
+      <div class="col-md-4">
+        <center><button id="" name="" class="btn btn-primary">UPDATE</button></center>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+  </div></div>
+</body>
+</html>
